@@ -20,6 +20,7 @@ import { ContactComponent } from './contact/contact.component';
     MissionComponent,
     TeamComponent,
     ContactComponent
+
   ],
   imports: [
     BrowserModule
