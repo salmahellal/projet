@@ -2,28 +2,26 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import {RouterModule} from '@angular/router';
+import {MDBBootstrapModule} from 'angular-bootstrap-md';
+import {ROUTING} from './app-routing';
 import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
 import { VisionComponent } from './vision/vision.component';
-import { SlidesComponent } from './slides/slides.component';
 import { MissionComponent } from './mission/mission.component';
-import { TeamComponent } from './team/team.component';
-import { ContactComponent } from './contact/contact.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    VisionComponent,
-    SlidesComponent,
-    MissionComponent,
-    TeamComponent,
-    ContactComponent
-
+  HeaderComponent,
+  VisionComponent,
+  MissionComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule,
+    MDBBootstrapModule.forRoot(),
+    ROUTING
   ],
   providers: [],
   bootstrap: [AppComponent]
