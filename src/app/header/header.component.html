@@ -1,65 +1,45 @@
-<!--Main Navigation-->
-<header class="intro-header">
+<!----------------------Navigation Bar--------------------->
+<section id="nav-bar">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">
+      <img src="assets/images/titre1.png" alt="" class="titre">
 
-  <!--Navbar-->
-  <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-    <mdb-navbar-brand>
-      <a class="logo navbar-brand waves-light" mdbWavesEffect href="#"><strong>نجم نعاون INSAT Version</strong></a>
-    </mdb-navbar-brand>
-    <links>
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active waves-light" mdbWavesEffect>
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto" >
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['']">Home</a>
         </li>
-        <li class="nav-item waves-light" mdbWavesEffect>
+        <li class="nav-item">
           <a class="nav-link" href="#about">About us</a>
         </li>
-
-        <li class="nav-item waves-light" mdbWavesEffect>
+        <li class="nav-item">
           <a class="nav-link" href="#team">Team</a>
         </li>
-        <li class="nav-item waves-light" mdbWavesEffect>
-          <a class="nav-link" href="#">Services & resources</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Opportunities</a>
+
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item">Find job</a>
+            <a class="dropdown-item" href="#">Find internship</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Post job opportunity</a>
+          </div>
         </li>
-        <li class="nav-item waves-light" mdbWavesEffect>
-          <a class="nav-link" href="#">login/Register</a>
+        <li class="nav-item">
+          <a class="nav-link">Services & resources</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['login']">Login</a>
         </li>
       </ul>
-      <form class="form-inline waves-light" mdbWavesEffect>
-        <div class="md-form">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        </div>
-      </form>
-    </links>
-  </mdb-navbar>
-
-  <!--Intro Section-->
-  <section class="view intro-2">
-    <div class="full-bg-img mask rgba-gradient">
-      <div class="container flex-center">
-        <div class="d-flex align-items-center content-height w-100">
-          <div class="row flex-center pt-5 mt-3 w-100">
-            <div class="col-md-6 text-center text-md-left mb-5">
-              <div class="white-text">
-                <h2 class="h1 h1-responsive font-bold wow fadeInLeft" data-wow-delay="0.3s">نجم نعاون INSAT Version </h2>
-                <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s">
-                <h6 class="wow fadeInLeft" data-wow-delay="0.3s">Description du site</h6>
-                <br>
-                <a mdbBtn color="white" outline="true" class="wow fadeInLeft waves-light" data-wow-delay="0.3s"
-                   mdbWavesEffect href="#about">About us</a>
-              </div>
-            </div>
-
-
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
-
-</header>
-<!--Main Navigation-->
-<div class="container">
-  <app-vision id="about"></app-vision>
-  <app-mission></app-mission>
-</div>
+  </nav>
+</section>
